@@ -1,0 +1,114 @@
+:root {
+    --success: #5cb85c;
+    --danger: #d9534f;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+
+.todolist-app header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.header__form {
+    display: flex;
+    align-items: center;
+}
+
+.header__form__input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 2rem;
+    
+}
+
+.header__form__input:focus {
+    outline: none;
+}
+
+
+.header__form__submit {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+
+.header__form__submit:hover {
+    cursor: pointer;
+}
+
+
+
+.header__title {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+.todolist {
+    border: 1px solid red;
+    width: 70%;
+    margin: 1rem auto;
+    padding: 2rem;
+}
+
+.todo {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo:not(:last-child){
+    margin-bottom: 2rem;
+}
+
+.todo__content {
+    font-size: 2rem;
+}
+
+
+.todo__edit {
+    width: 100%;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.todo__edit:focus {
+    outline: none;
+}
+
+.todo__btn {
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.todo__btn:hover {
+    cursor: pointer;
+}
+
+.todo__btn--success {
+    background-color: var(--success);
+}
+
+.todo__btn--danger {
+    background-color: var(--danger);
+}
